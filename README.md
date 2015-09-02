@@ -1,6 +1,6 @@
 ```
 /**
- * php - Encryption & Decryption Made Easy with PHP, MCrypt, Rijndael-256, and CBC
+ * php - Secure Encryption & Decryption Made Easy with PHP, MCrypt, Rijndael-256, and CBC
  * 
 * @package php-mcrypt256CBC
 * @version 1.0

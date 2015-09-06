@@ -12,3 +12,9 @@
 * @license http://creativecommons.org/licenses/by/4.0/
 */
 ```
+## System installation
+```
+apt-get update & apt-get upgrade
+apt-get install git
+apt-get install php5-curl php5-sqlite php5-cli
+```

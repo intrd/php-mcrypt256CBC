@@ -20,3 +20,17 @@ apt-get install php5-curl php5-sqlite php5-cli
 apt-get install git
 git clone https://github.com/intrd/php-mcrypt256CBC/
 ```
+
+## Usage sample
+```
+if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', "12345677378111147486847454344411"); //set your private key
+
+$text="my test";
+$text=mc_encrypt($text); //encrypt $text using defined privatekey
+echo $text; //show encrypted text
+
+$text=mc_decrypt($text); //decrypt $text using defined privatekey
+echo $text; //show plaintext
+
+
+```

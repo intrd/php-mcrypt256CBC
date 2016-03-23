@@ -17,12 +17,8 @@
  * @param  text $encrypt 
  * @return text          
  */
-function mc_encrypt($encrypt,$key=false){
-	if (!isset($key)){
-        $key=ENCRYPTION_KEY;
-    }
-    vd($key);
-    die;
+function mc_encrypt($encrypt){
+    $key=ENCRYPTION_KEY;
     $encrypt = serialize($encrypt);
     $iv = mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_CBC), MCRYPT_DEV_URANDOM);
     $key = pack('H*', $key);

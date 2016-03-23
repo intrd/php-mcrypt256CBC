@@ -17,8 +17,10 @@
  * @param  text $encrypt 
  * @return text          
  */
-function mc_encrypt($encrypt){
-	$key=ENCRYPTION_KEY;
+function mc_encrypt($encrypt,$key=false){
+	if (!isset($key)){
+        $key=ENCRYPTION_KEY;
+    }
     $encrypt = serialize($encrypt);
     $iv = mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_CBC), MCRYPT_DEV_URANDOM);
     $key = pack('H*', $key);
@@ -32,8 +34,10 @@ function mc_encrypt($encrypt){
  * @param  text $decrypt 
  * @return text          
  */
-function mc_decrypt($decrypt){
-	$key=ENCRYPTION_KEY;
+function mc_decrypt($decrypt,$key=false){
+	if (!isset($key)){
+        $key=ENCRYPTION_KEY;
+    }
     $decrypt = explode('|', $decrypt.'|');
     $decoded = base64_decode($decrypt[0]);
     $iv = base64_decode($decrypt[1]);

@@ -68,9 +68,9 @@ use php\mcrypt256cbc as cry;
 if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', "12345677378111147486847454344411"); //set your private key
 
 $test="yeah it works!";
-$text=cry::mc_encrypt($text); //encrypt $text using defined privatekey
+$text=cry::mc_encrypt($text,ENCRYPTION_KEY); //encrypt $text using defined privatekey
 echo $text; //show encrypted text
 
-$text=cry::mc_decrypt($text); //decrypt $text using defined privatekey
+$text=cry::mc_decrypt($text,ENCRYPTION_KEY); //decrypt $text using defined privatekey
 echo $text; //show plaintext
 ```

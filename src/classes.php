@@ -2,10 +2,10 @@
 /**
  * PHP - Secure Encryption & Decryption Made Easy with PHP, MCrypt, Rijndael-256, and CBC
 * 
-* @package intrd/php-mcrypt256CBC
+* @package intrd/php-mcrypt256cbc
 * @version 1.0
 * @tags php, encryption, mcrypt, 256bits, cbc, rijndael
-* @link http://github.com/intrd/php-mcrypt256CBC
+* @link http://github.com/intrd/php-mcrypt256cbc
 * @author intrd (Danilo Salles) - http://dann.com.br
 * @author Originally developed by Joshhartman - http://www.warpconduit.net/2013/04/14/highly-secure-data-encryption-decryption-made-easy-with-php-mcrypt-rijndael-256-and-cbc/
 * @copyright (CC-BY-SA-4.0) 2016, intrd
@@ -15,7 +15,7 @@
 *** @docbloc 1.1 */
 
 namespace php;
-class mcrypt256CBC {
+class mcrypt256cbc {
 
     /**
      * mc_encrypt

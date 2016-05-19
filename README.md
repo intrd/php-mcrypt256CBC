@@ -4,7 +4,7 @@ PHP - Secure Encryption & Decryption Made Easy with PHP, MCrypt, Rijndael-256, a
 <table>
 <tr>
 <th>Package</th>
-<td>intrd/php-mcrypt256CBC</td>
+<td>intrd/php-mcrypt256cbc</td>
 </tr>
 <tr>
 <th>Version</th>
@@ -16,7 +16,7 @@ PHP - Secure Encryption & Decryption Made Easy with PHP, MCrypt, Rijndael-256, a
 </tr>
 <tr>
 <th>Project URL</th>
-<td>http://github.com/intrd/php-mcrypt256CBC</td>
+<td>http://github.com/intrd/php-mcrypt256cbc</td>
 </tr>
 <tr>
 <th>Author</th>
@@ -47,7 +47,7 @@ $ sudo apt-get install curl php-curl php-cli php-mcrypt
 $ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 Now download the package..
-$ composer require intrd/php-mcrypt256CBC
+$ composer require intrd/php-mcrypt256cbc
 
 To check for update..
 $ composer update
@@ -58,14 +58,14 @@ $ composer update
 Assuming your project are running over `Composer` PSR-4 defaults, simply Require it on your `composer.json`
 ```
 "require": {
-    "intrd/php-mcrypt256CBC": ">=1.0.x-dev <dev-master"
+    "intrd/php-mcrypt256cbc": ">=1.0.x-dev <dev-master"
 }
 ```
 Now Composer Autoload will instance this class and you are able to use..
 
 ```
 require __DIR__ . '/vendor/autoload.php';
-use php\mcrypt256CBC as cry;
+use php\mcrypt256cbc as cry;
 
 if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', "12345677378111147486847454344411"); //set your private key
 

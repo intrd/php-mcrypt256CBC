@@ -1,8 +1,8 @@
 {
-    "name": "intrd/php-mcrypt256CBC",
+    "name": "intrd/php-mcrypt256cbc",
     "description": "PHP - Secure Encryption & Decryption Made Easy with PHP, MCrypt, Rijndael-256, and CBC",
     "keywords": ["php","encryption","mcrypt","256bits","cbc","rijndael"],
-    "homepage": "http://github.com/intrd/php-mcrypt256CBC",
+    "homepage": "http://github.com/intrd/php-mcrypt256cbc",
     "authors": [
             {
                 "name": "intrd (Danilo Salles)",

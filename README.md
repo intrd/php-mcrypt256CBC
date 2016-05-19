@@ -20,7 +20,10 @@ PHP - Secure Encryption & Decryption Made Easy with PHP, MCrypt, Rijndael-256, a
 </tr>
 <tr>
 <th>Author</th>
-<td>intrd (Danilo Salles) - http://dann.com.br</td>
+<td>intrd (Danilo Salles) - http://dann.com.br
+<tr>
+<th>Author</th>
+<td>Originally developed by Joshhartman - http://www.warpconduit.net/2013/04/14/highly-secure-data-encryption-decryption-made-easy-with-php-mcrypt-rijndael-256-and-cbc/</td>
 <tr>
 <th>Copyright</th>
 <td>(CC-BY-SA-4.0) 2016, intrd</td>
